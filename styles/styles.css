@@ -53,14 +53,16 @@ header-section
   border-bottom: 1px solid #ececec;
 }
 
-.header .container {
+.header__container {
   display: flex;
   align-items: center;
 }
 
-.logo-link {
+.header__logo {
   margin-right: 93px;
+}
 
+.logo__link {
   color: var(--logo-text);
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -69,7 +71,7 @@ header-section
   letter-spacing: 0.03em;
 }
 
-.logo-header {
+.logo__header {
   color: var(--logo-header);
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -78,15 +80,17 @@ header-section
   letter-spacing: 0.03em;
 }
 
-.nav-title {
+.nav__title {
   color: var(--logo-text);
 }
 
-.nav-link {
+.nav__link--position {
   position: relative;
   padding-top: 32px;
   padding-bottom: 32px;
+}
 
+.nav__link {
   color: var(--primal-text);
   font-weight: 500;
   font-size: 14px;
@@ -97,7 +101,7 @@ header-section
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-link.after-1::after {
+.nav__link--current::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -109,7 +113,7 @@ header-section
   border-radius: 2px;
 }
 
-.nav-link.after-2::after {
+.nav__link--currentp::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -121,23 +125,25 @@ header-section
   border-radius: 2px;
 }
 
-.nav-list {
+.nav__list {
   list-style: none;
   display: flex;
   gap: 50px;
 }
 
-.nav-list :hover,
-.nav-list :focus {
+.nav__list :hover,
+.nav__list :focus {
   color: var(--logo-text);
 }
 
-.header-link {
+.header__link--position {
   display: inline-flex;
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
+}
 
+.header__link {
   color: var(--slave-text);
   fill: var(--slave-text);
   font-weight: 500;
@@ -148,20 +154,19 @@ header-section
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-list {
+.header__list {
   display: flex;
   margin-left: auto;
   gap: 30px;
 }
 
-.header-list :hover,
-.header-list :focus {
+.header__list :hover,
+.header__list :focus {
   color: var(--logo-text);
   fill: var(--logo-text);
-
 }
 
-.header-icon {
+.header__icon {
   margin-right: 10px;
 }
 
@@ -182,7 +187,7 @@ hero-section
   background-position: center;
 }
 
-.hero-title {
+.hero__title {
   width: 696px;
   margin-left: auto;
   margin-right: auto;
@@ -197,7 +202,7 @@ hero-section
   text-align: center;
 }
 
-.hero-btn {
+.hero__btn {
   width: 200px;
   height: 50px;
   display: block;
@@ -210,6 +215,7 @@ hero-section
   font-weight: 700;
   line-height: 1.9;
   letter-spacing: 0.06em;
+
   cursor: pointer;
   color: var(--logo-footer);
   background-color: var(--logo-text);
@@ -218,40 +224,40 @@ hero-section
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-btn:hover,
-.hero-btn:active {
+.hero__btn:hover,
+.hero__btn:active {
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
 }
 
 /* ======================
 features-section
 ====================== */
-.features .item-svg {
+.feature-item__svg {
   background-color: #f5f4fa;
   padding: 25px 100px;
 }
 
-.features .list-svg {
+.feature-list__svg {
   display: flex;
   gap: 30px;
-
   margin-bottom: 30px;
 }
 
-.features-list {
+.features__list {
   display: flex;
   gap: 30px;
 }
 
-.features-item.item {
+.features__item {
   flex-basis: 270px;
 }
 
-.features-title {
+.features__title--position {
   margin-bottom: 10px;
+}
 
+.features__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.2;
@@ -259,7 +265,7 @@ features-section
   text-transform: uppercase;
 }
 
-.features-desc {
+.features__desc {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -273,14 +279,11 @@ features-section
 /* ======================
 work-section
 ====================== */
-.work-list {
-  display: flex;
-  gap: 30px;
+.work__title--position {
+  margin-bottom: 50px;
 }
 
-.work-title {
-  margin-bottom: 50px;
-
+.work__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
@@ -288,21 +291,25 @@ work-section
   text-align: center;
 }
 
-.link.thumb-link {
+.work__list {
+  display: flex;
+  gap: 30px;
+}
+
+.work__link {
   position: relative;
 }
 
-.thumb-work-title {
+.work__title-work--position {
   position: absolute;
   bottom: 0;
   right: 0;
-
-}
-
-.thumb-work-title {
   padding: 27px 82px;
   width: 370px;
 
+}
+
+.work__title-work {
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -400,9 +407,11 @@ teams-section
 /* ======================
 clients section
 ====================== */
-.clients-title {
+.clients__title--position {
   margin-bottom: 50px;
+}
 
+.clients__title {
   color: var(--primal-text);
   font-size: 36px;
   font-weight: 700;
@@ -411,13 +420,13 @@ clients section
   text-align: center;
 }
 
-.clients-list {
+.clients__list {
   display: flex;
   gap: 30px;
   justify-content: center;
 }
 
-.link.link-svg {
+.clients__icon {
   display: flex;
   width: 170px;
   height: 92px;
@@ -431,11 +440,10 @@ clients section
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
-.link.link-svg:hover,
-.link.link-svg:focus {
+.clients__icon:hover,
+.clients__icon:focus {
   fill: var(--logo-text);
   border-color: var(--logo-text);
 
