@@ -1,0 +1,47 @@
+:root {
+  --primal-text: #212121;
+  --logo-text: #2196f3;
+  --logo-header: #000000;
+  --logo-footer: #ffffff;
+  --slave-text: #757575;
+}
+
+body {
+  color: var(--primal-text);
+  font-family: Roboto, sans-serif;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.work-img,
+.teams-img,
+.portfolio-img {
+  display: block;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section {
+  padding: 94px 0;
+}/*# sourceMappingURL=main.css.map */
