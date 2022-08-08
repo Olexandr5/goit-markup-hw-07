@@ -10,7 +10,7 @@
   padding: 94px 0;
 }
 
-.nav__list, .work__list, .teams__social, .teams__item, .teams__list, .header__list, .footer__list, .features__item, .features-item__svg, .clients__list, .portfolio__list-btn {
+.nav__list, .work__list, .teams__social, .teams__item, .teams__list, .portfolio-work__list, .header__list, .footer__list, .features__item, .features-item__svg, .clients__list, .portfolio__list-btn {
   list-style: none;
 }
 
@@ -34,7 +34,7 @@ ul {
 
 .work__img,
 .teams__img,
-.portfolio__img {
+.portfolio-work__img {
   display: block;
 }
 
@@ -759,6 +759,13 @@ ul {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
+}
+.portfolio-work__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .portfolio-work__item {
   width: 370px;

@@ -5,7 +5,7 @@
 }
 
 .portfolio-work {
-  &___list {
+  &__list {
     display: flex;
     flex-wrap: wrap;
     @extend %reset-list;
